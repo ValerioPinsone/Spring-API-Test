@@ -33,4 +33,9 @@ public class LibroController {
     public void  inserisciLibro(@RequestBody Libro lbr){
         libroSer.insert(lbr);
     }
+
+    @DeleteMapping("/libri/elimina/{id}")
+    public void deleteLibro(@PathVariable int id){
+        libroSer.delete(id);
+    }
 }

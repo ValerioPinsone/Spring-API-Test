@@ -21,5 +21,10 @@ public class LibroService {
         libroRep.save(l);
     }
 
+    //mod
+    public void delete(int l){
+        libroRep.delete(libroRep.getById(l));
+    }
+
 
 }

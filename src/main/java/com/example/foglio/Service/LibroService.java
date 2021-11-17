@@ -24,10 +24,12 @@ public class LibroService {
         libroRep.save(l);
     }
 
-    //mod
+    //Metodo che permette di eliminare un libro in funzione del suo id
     public void delete(int l){
         libroRep.delete(libroRep.getById(l));
     }
+
+
 
 
 }

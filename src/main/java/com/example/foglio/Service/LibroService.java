@@ -13,10 +13,13 @@ public class LibroService {
     @Autowired
     LibroRepository libroRep;
 
+    //Metodo che ritorna la lista di tutti i libri
     public List<Libro> getAll(){ return libroRep.findAll(); }
 
+    //Metodo che permette di trovare un libro in funzione del suo id
     public Libro getById(int p){ return libroRep.findById(p).orElse(new Libro());}
 
+    //Metodo che permette di inserire un nuovo libro
     public void insert(Libro l){
         libroRep.save(l);
     }

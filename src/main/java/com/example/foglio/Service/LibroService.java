@@ -25,8 +25,13 @@ public class LibroService {
     }
 
     //Metodo che permette di eliminare un libro in funzione del suo id
-    public void delete(int l){
-        libroRep.delete(libroRep.getById(l));
+    public void deleteById(int n){
+        libroRep.delete(libroRep.getById(n));
+    }
+
+    //Metodo che permette di sostituire un libro in funzione del suo id
+    public void replaceById(int n){
+        //da implementare
     }
 
 

@@ -36,6 +36,6 @@ public class LibroController {
 
     @DeleteMapping("/libri/elimina/{id}")
     public void deleteLibro(@PathVariable int id){
-        libroSer.delete(id);
+        libroSer.deleteById(id);
     }
 }
